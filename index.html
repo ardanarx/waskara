@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arsara — Stories, thoughts, and observations.">
+  <title>Articles — Arsara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="navbar">
+    <a class="logo" href="index.html">ARSARA</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="search-pill" id="searchButton" type="button" aria-label="Search articles">
+        <span class="search-icon" aria-hidden="true"></span><span>Search</span>
+      </button>
+      <button class="menu-button" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a class="active" href="index.html">Articles</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-box">
+    <div class="search-input-wrapper">
+      <span class="search-icon" aria-hidden="true"></span>
+      <input id="searchInput" type="search" placeholder="Search articles..." autocomplete="off">
+      <button id="closeSearch" type="button">Esc</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<main class="articles-page">
+  <div class="page-heading">
+    <h1>Articles</h1>
+    <p>Stories, thoughts, and observations.</p>
+  </div>
+
+  <section class="article-list" aria-label="Articles">
+    <a class="article-row" href="article.html?id=the-house-that-never-had-a-door">
+      <div class="article-main">
+        <div class="article-meta"><span>12 Sep 2026</span><span>·</span><span>5 min read</span></div>
+        <h2>The House That Never Had a Door</h2>
+        <p>About places we remember, even after we have left them behind.</p>
+      </div>
+      <span class="article-arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a class="article-row" href="article.html?id=langit-yang-tidak-pernah-sama">
+      <div class="article-main">
+        <div class="article-meta"><span>8 Sep 2026</span><span>·</span><span>4 min read</span></div>
+        <h2>Langit yang Tidak Pernah Sama</h2>
+        <p>Tentang perubahan kecil yang sering baru kita sadari setelah waktu berlalu.</p>
+      </div>
+      <span class="article-arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a class="article-row" href="article.html?id=tentang-yang-pergi-dan-tetap">
+      <div class="article-main">
+        <div class="article-meta"><span>3 Sep 2026</span><span>·</span><span>6 min read</span></div>
+        <h2>Tentang yang Pergi dan Tetap</h2>
+        <p>Beberapa hal pergi dari hidup kita, tetapi tidak benar-benar hilang.</p>
+      </div>
+      <span class="article-arrow" aria-hidden="true">↗</span>
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a class="logo" href="index.html">ARSARA</a>
+  <span>2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
