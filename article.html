@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Article — Waskara">
+  <title>Article — Waskara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="navbar">
+    <a class="logo" href="index.html">WASKARA</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="search-pill" id="searchButton" type="button" aria-label="Search articles">
+        <span class="search-icon" aria-hidden="true"></span><span>Search</span>
+      </button>
+      <button class="menu-button" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a class="active" href="index.html">Articles</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-box">
+    <div class="search-input-wrapper">
+      <span class="search-icon" aria-hidden="true"></span>
+      <input id="searchInput" type="search" placeholder="Search articles..." autocomplete="off">
+      <button id="closeSearch" type="button">Esc</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<main>
+  <article class="single-article">
+    <header class="article-header">
+      <a class="article-back" href="index.html">← <span>Back to Articles</span></a>
+      <div class="single-article-meta">
+        <span>The Waskara Journal</span><span>·</span><time id="articleDate">12 Sep 2026</time><span>·</span><span id="articleReadTime">5 min read</span>
+      </div>
+      <h1 id="articleTitle">The House That Never Had a Door</h1>
+      <p class="article-intro" id="articleDescription">About places we remember, even after we have left them behind.</p>
+    </header>
+
+    <div class="article-body">
+      <div class="article-empty">Loading article…</div>
+    </div>
+
+    <footer class="article-footer">
+      <div class="article-footer-line"></div>
+      <div class="article-footer-content">
+        <span>WASKARA</span>
+        <a href="index.html">← All Articles</a>
+      </div>
+    </footer>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <a class="logo" href="index.html">WASKARA</a>
+  <span>2026</span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
