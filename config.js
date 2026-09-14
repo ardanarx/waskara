@@ -1,4 +1,4 @@
 window.WASKARA_CONFIG = {
-  SUPABASE_URL: "PASTE_SUPABASE_URL_DI_SINI",
-  SUPABASE_KEY: "PASTE_SUPABASE_PUBLISHABLE_ANON_KEY_DI_SINI"
+  SUPABASE_URL: "https://xutsvgrznbucontgelvn.supabase.co",
+  SUPABASE_KEY: "sb_publishable_Cx7dcgkOGzI5UaflczmRjg_jFErzQKv"
 };
