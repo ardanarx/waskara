@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Waskara — Cerita, pemikiran, dan pengamatan.">
+  <title>Tulisan — Waskara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+<body>
+<header class="site-header">
+  <div class="navbar">
+    <a class="logo" href="index.html">WASKARA</a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a class="active" href="index.html">Tulisan</a>
+      <a href="about.html">Tentang</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+    <div class="navbar-right">
+      <button class="search-pill" id="searchButton" type="button" aria-label="Cari tulisan">
+        <span class="search-icon" aria-hidden="true"></span><span>Cari</span>
+      </button>
+      <button class="menu-button" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navigasi seluler">
+    <a class="active" href="index.html">Tulisan</a>
+    <a href="about.html">Tentang</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+</header>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-box">
+    <div class="search-input-wrapper">
+      <span class="search-icon" aria-hidden="true"></span>
+      <input id="searchInput" type="search" placeholder="Cari tulisan..." autocomplete="off">
+      <button id="closeCari" type="button">Esc</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<main class="articles-page">
+  <div class="page-heading">
+    <h1>Tulisan</h1>
+    <p>Cerita, pemikiran, dan pengamatan.</p>
+  </div>
+
+  <section class="article-list" id="articleList" aria-label="Tulisan">
+    <p class="article-loading">Memuat tulisan...</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a class="logo" href="index.html">WASKARA</a>
+  <span>2026</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
